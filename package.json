@@ -1,0 +1,16 @@
+{
+  "name": "mini-recruitment-platform",
+  "version": "1.0.0",
+  "description": "Mini Recruitment Platform",
+  "main": "server/app.js",
+  "scripts": {
+    "start": "cd server && npm start",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
